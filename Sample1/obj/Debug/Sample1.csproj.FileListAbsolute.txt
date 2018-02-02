@@ -1,13 +1,5 @@
 C:\Users\cxu\Documents\CI\Chandler\my code\Backend Test\Sample1\Sample1\bin\Debug\Sample1.dll
 C:\Users\cxu\Documents\CI\Chandler\my code\Backend Test\Sample1\Sample1\bin\Debug\Sample1.pdb
-C:\Users\cxu\Documents\CI\Chandler\my code\Backend Test\Sample1\Sample1\bin\Debug\xunit.abstractions.dll
-C:\Users\cxu\Documents\CI\Chandler\my code\Backend Test\Sample1\Sample1\bin\Debug\xunit.assert.dll
-C:\Users\cxu\Documents\CI\Chandler\my code\Backend Test\Sample1\Sample1\bin\Debug\xunit.core.dll
-C:\Users\cxu\Documents\CI\Chandler\my code\Backend Test\Sample1\Sample1\bin\Debug\xunit.execution.desktop.dll
-C:\Users\cxu\Documents\CI\Chandler\my code\Backend Test\Sample1\Sample1\bin\Debug\xunit.abstractions.xml
-C:\Users\cxu\Documents\CI\Chandler\my code\Backend Test\Sample1\Sample1\bin\Debug\xunit.assert.xml
-C:\Users\cxu\Documents\CI\Chandler\my code\Backend Test\Sample1\Sample1\bin\Debug\xunit.core.xml
-C:\Users\cxu\Documents\CI\Chandler\my code\Backend Test\Sample1\Sample1\bin\Debug\xunit.execution.desktop.xml
 C:\Users\cxu\Documents\CI\Chandler\my code\Backend Test\Sample1\Sample1\obj\Debug\Sample1.csprojResolveAssemblyReference.cache
 C:\Users\cxu\Documents\CI\Chandler\my code\Backend Test\Sample1\Sample1\obj\Debug\Sample1.csproj.CoreCompileInputs.cache
 C:\Users\cxu\Documents\CI\Chandler\my code\Backend Test\Sample1\Sample1\obj\Debug\Sample1.dll
