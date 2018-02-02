@@ -48,19 +48,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ClientService\ClientService.csproj">
-      <Project>{7c1e7609-fe68-4b09-af1f-a2680145a20a}</Project>
-      <Name>ClientService</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Sample1\Sample1.csproj">
-      <Project>{b66ba0fe-45dc-48bd-b8ce-53abc8df0435}</Project>
-      <Name>Sample1</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\XunitTestClass\XunitTestClass.csproj">
-      <Project>{66c7c638-4ad0-4030-b352-89d4c1070cb6}</Project>
-      <Name>XunitTestClass</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
