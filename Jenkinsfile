@@ -15,7 +15,7 @@ node('master') {
             // Use Xunit.Runner.Console to excute unit test files and generate report in xml format
             // replace this with parsing code 
             // powershell 'XUnit_Test_Runner.ps1'
-            bat 'packages\\xunit.runner.console.2.3.1\\tools\\net452\\xunit.console XunitTestClass\\bin\\Release\\XunitTestClass.dll -xml TestResult\\reprot.xml'
+            bat 'packages\\xunit.runner.console.2.3.1\\tools\\net452\\xunit.console XunitTestClass\\bin\\Release\\XunitTestClass.dll -xml TestReport\\report.xml'
             
             
         }
