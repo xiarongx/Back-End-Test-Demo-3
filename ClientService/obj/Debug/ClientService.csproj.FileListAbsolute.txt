@@ -1,0 +1,6 @@
+C:\Users\cxu\Documents\CI\Chandler\my code\Backend Test\Sample1\ClientService\obj\Debug\ClientService.csprojResolveAssemblyReference.cache
+C:\Users\cxu\Documents\CI\Chandler\my code\Backend Test\Sample1\ClientService\obj\Debug\ClientService.csproj.CoreCompileInputs.cache
+C:\Users\cxu\Documents\CI\Chandler\my code\Backend Test\Sample1\ClientService\bin\Debug\ClientService.dll
+C:\Users\cxu\Documents\CI\Chandler\my code\Backend Test\Sample1\ClientService\bin\Debug\ClientService.pdb
+C:\Users\cxu\Documents\CI\Chandler\my code\Backend Test\Sample1\ClientService\obj\Debug\ClientService.dll
+C:\Users\cxu\Documents\CI\Chandler\my code\Backend Test\Sample1\ClientService\obj\Debug\ClientService.pdb
