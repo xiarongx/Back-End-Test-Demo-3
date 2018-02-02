@@ -11,7 +11,7 @@
 #####################################################
 param (
     [Alias('rd')]
-    [string]$rootDir = "C:\Users\cxu\.jenkins\workspace\Back-End-Test-Demo-2\",
+    [string]$rootDir = "",
     [string]$defaultReportsLocation = "C:\Users\cxu\.jenkins\workspace\Back-End-Test-Demo-2\TestReport\",
     [string]$reportFilePathPattern = "{0}\xunit_report_{1}.xml",
     [string]$xunitTestRunnerPath = "C:\Users\cxu\.jenkins\workspace\Back-End-Test-Demo-2\packages\xunit.runner.console.2.3.1\tools\net452\" 
