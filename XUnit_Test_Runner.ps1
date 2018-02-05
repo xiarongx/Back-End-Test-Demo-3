@@ -11,7 +11,7 @@
 #####################################################
 param (
     [Alias('rd')]
-    [string]$rootDir = "",
+    [string]$rootDir = "C:\Users\cxu\.jenkins\workspace\Back-End-Test-Demo-2\",
     [string]$defaultReportsLocation = "C:\Users\cxu\.jenkins\workspace\Back-End-Test-Demo-2\TestReport\",
     [string]$reportFilePathPattern = "{0}\xunit_report_{1}.xml",
     [string]$xunitTestRunnerPath = "C:\Users\cxu\.jenkins\workspace\Back-End-Test-Demo-2\packages\xunit.runner.console.2.3.1\tools\net452\" 
@@ -36,7 +36,8 @@ function checkFolderContainsDotnetProjectFile () {
     )
 
     $projectFilesCount = (Get-ChildItem $folderFullPath -File | Where-Object { $_.Name -match $dotnetProjectExtensionPattern }).count
-
+    Write-Host "----------------------------------------------------------test projects count: "
+    Write-Host $projectFilesCount
     [bool]$result = $false
     if ($projectFilesCount -gt 0) {
         $result = $true
@@ -81,6 +82,8 @@ function checkDotnetProjectFileContainsXunit () {
 # Loop through files in the source url folder to find xunit projects and return an array of the full path of those test folders:
 function searchXunitTestProjects () {  
     $testProjectsArray = @()   
+    Write-host "--------------------------root is here-----------------"
+    Write-host $rootDir
     Get-ChildItem $rootDir -Directory -Recurse | ForEach-Object {
         $folderFullPath = $_.FullName
         
@@ -93,8 +96,8 @@ function searchXunitTestProjects () {
     }
     $numOfTestProjects = $testProjectsArray.Length
     "numOfTestProjects=$numOfTestProjects" | Out-File "$rootDir\xunitProjectsNum.properties" -Encoding ascii
-    Write-Host "----------------------------------------------------------test projects found:"
-    Write-Host $testProjectsArray
+    # Write-Host "----------------------------------------------------------test projects found:"
+    # Write-Host $testProjectsArray
     return $testProjectsArray
 }
 
@@ -148,6 +151,7 @@ function runXunitTest () {
         $testReportFullPath = $reportFilePathPattern -f $defaultReportsLocation, $assemblyIndex
         cd $xunitTestRunnerPath 
         .\xunit.console $assembly -xml $testReportFullPath
+        # Write-Host "------ HA! Caught one! --------"
     }    
 }
 
