@@ -16,7 +16,7 @@ node('master') {
             // replace this with parsing code 
 
             // This is the powershell code
-            powershell -File C:\Users\cxu\.jenkins\workspace\Back-End-Test-Demo-2\XUnit_Test_Runner.ps1
+            bat 'powershell XUnit_Test_Runner.ps1'
             // and this is the dumb way to do the same thing
             //bat 'packages\\xunit.runner.console.2.3.1\\tools\\net452\\xunit.console XunitTestClass\\bin\\Release\\XunitTestClass.dll -xml TestReport\\report.xml'
             
