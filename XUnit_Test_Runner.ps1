@@ -11,10 +11,10 @@
 #####################################################
 param (
     [Alias('rd')]
-    [string]$rootDir = "C:\Users\cxu\.jenkins\workspace\Back-End-Test-Demo-2\",
-    [string]$defaultReportsLocation = "C:\Users\cxu\.jenkins\workspace\Back-End-Test-Demo-2\TestReport\",
+    [string]$rootDir = "C:\Program Files (x86)\Jenkins\workspace\Back-End-Pipeline-1\",
+    [string]$defaultReportsLocation = "C:\Program Files (x86)\Jenkins\workspace\Back-End-Pipeline-1\TestReport\",
     [string]$reportFilePathPattern = "{0}\xunit_report_{1}.xml",
-    [string]$xunitTestRunnerPath = "C:\Users\cxu\.jenkins\workspace\Back-End-Test-Demo-2\packages\xunit.runner.console.2.3.1\tools\net452\" 
+    [string]$xunitTestRunnerPath = "C:\Tools\xunit.runner.console.2.3.1\tools\net452\" 
 )
 
 #######################################################

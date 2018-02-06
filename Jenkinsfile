@@ -1,5 +1,6 @@
 #!/user/bin/env groovy
 
+// update code for running on server
 node('master') {
     try {
         stage('Checkout'){
@@ -7,8 +8,8 @@ node('master') {
         }
 
         stage('Build'){
-            bat 'nuget.exe restore Sample1.sln'
-            bat "\"${tool 'MSBuild-15.0'}\" Sample1.sln /p:Configuration=Release /p:Platform=\"Any CPU\" /p:ProductVersion=1.0.0.${env.BUILD_NUMBER}"
+            bat "'C:\\Tools\\nuget.exe' restore Sample1.sln'"
+            bat "\"${tool 'MSBuild - 15.0'}\" Sample1.sln /p:Configuration=Release /p:Platform=\"Any CPU\" /p:ProductVersion=1.0.0.${env.BUILD_NUMBER}"
         }
 
         stage('Backend Test'){
@@ -19,7 +20,7 @@ node('master') {
             // The default powershell execution policy is restrict, we need to change it to bypass or unrestricted in
             // order to execute ps1 script inside a jenkins pipeline script
             // bat 'npm install xunit.runner.console'
-            bat 'powershell C:\\Users\\cxu\\.jenkins\\workspace\\Back-End-Test-Demo-2\\XUnit_Test_Runner.ps1'
+            bat 'powershell Back-End-Pipeline-1\\XUnit_Test_Runner.ps1'
 
 
             // and this is the manual way to do the same thing
