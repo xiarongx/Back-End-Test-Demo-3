@@ -8,7 +8,7 @@ node('master') {
         }
 
         stage('Build'){
-            bat "'C:\\Tools\\nuget.exe' restore Sample1.sln"
+            bat 'C:\\Tools\\nuget.exe restore Sample1.sln'
             bat "\"${tool 'MSBuild - 15.0'}\" Sample1.sln /p:Configuration=Release /p:Platform=\"Any CPU\" /p:ProductVersion=1.0.0.${env.BUILD_NUMBER}"
         }
 
