@@ -32,15 +32,20 @@ node('master') {
         stage('Archive'){
             archiveArtifacts "Sample1/bin/Release/**/*"
         }
-
+        // Email SMTP has not been set up
+        /*
         mail body: 'project build successful', 
                         subject: 'pipeline test email: successful', 
                         to: 'cxu@acr.org'
+        */
     }
     catch(error){
+        // Email SMTP has not been set up
+        /*
         mail body: "project build error is here: ${env.BUILD_URL}", 
                         subject: 'pipeline test email: fail', 
                         to: 'cxu@acr.org'
+        */
         throw error
     }
     finally{
