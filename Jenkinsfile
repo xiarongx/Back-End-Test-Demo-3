@@ -20,7 +20,7 @@ node('master') {
             // The default powershell execution policy is restrict, we need to change it to bypass or unrestricted in
             // order to execute ps1 script inside a jenkins pipeline script
             // bat 'npm install xunit.runner.console'
-            bat 'powershell Back-End-Pipeline-1\\XUnit_Test_Runner.ps1'
+            bat 'powershell XUnit_Test_Runner.ps1'
 
 
             // and this is the manual way to do the same thing
