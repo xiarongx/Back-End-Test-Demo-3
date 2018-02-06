@@ -16,9 +16,14 @@ node('master') {
             // replace this with parsing code 
 
             // This is the powershell code
+            // The default powershell execution policy is restrict, we need to change it to bypass or unrestricted in
+            // order to execute ps1 script inside a jenkins pipeline script
+            // bat 'npm install xunit.runner.console'
             bat 'powershell C:\\Users\\cxu\\.jenkins\\workspace\\Back-End-Test-Demo-2\\XUnit_Test_Runner.ps1'
-            // and this is the dumb way to do the same thing
-            //bat 'packages\\xunit.runner.console.2.3.1\\tools\\net452\\xunit.console XunitTestClass\\bin\\Release\\XunitTestClass.dll -xml TestReport\\report.xml'
+
+
+            // and this is the manual way to do the same thing
+            // bat 'packages\\xunit.runner.console.2.3.1\\tools\\net452\\xunit.console XunitTestClass\\bin\\Release\\XunitTestClass.dll -xml TestReport\\report.xml'
             
             
         }

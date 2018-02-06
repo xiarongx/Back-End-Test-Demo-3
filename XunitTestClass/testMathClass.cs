@@ -11,6 +11,8 @@ namespace XunitTestClass
     {
         myMathClass mathClass = new myMathClass();
 
+        // Facts are tests which are always true. They test invariant conditions.
+
         [Fact]
         public void goodAreaTest()
         {
@@ -35,11 +37,14 @@ namespace XunitTestClass
             var sum = mathClass.Add(5, 12);
             Assert.Equal(17, sum);
         }
+
+        // Theories are tests which are only true for a particular set of data.
         // Test with Theory InlineData, only simple data type can be passed to InlineData
+
         [Theory]
         [InlineData(3)]
         [InlineData(5)]
-        [InlineData(7)]
+        [InlineData(8)]
         public void isOddTestWithWrongData(int number)
         {
             Assert.True(mathClass.IsOdd(number));

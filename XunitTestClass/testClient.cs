@@ -27,7 +27,7 @@ namespace XunitTestClass
         [Fact]
         public void badClientFullNameTest()
         {
-            Action a = () => new Client("Steve W I L D Madden");
+            Action a = () => new Client("John W I L D Madden");
             Assert.Throws<ArgumentException>(a);
         }
     }
